@@ -12,5 +12,6 @@
 @interface AddToDoItemViewController : UIViewController
 
 @property ToDoItem *toDoItem;
+@property NSMutableArray *overView;
 
 @end

@@ -16,12 +16,21 @@
 
 @implementation ToDoListTableViewController
 
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.toDoItems = [[NSMutableArray alloc] init];
+    
     [self loadInitialData];
     
 }
@@ -48,17 +57,16 @@
 {
     static NSString *CellIdentifier = @"ListPrototypeCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    NSLog(@"%@",cell.isEditing ? @"YES":@"NO");
     ToDoItem *toDoItem = [self.toDoItems objectAtIndex:indexPath.row];
     cell.textLabel.text = toDoItem.itemName;
-    if (toDoItem.completed)
-    {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    }
-    else
-    {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
+//    if (toDoItem.completed)
+//    {
+//        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+//    }
+//    else
+//    {
+//        cell.accessoryType = UITableViewCellAccessoryNone;
+//    }
     return cell;
 }
 
@@ -75,10 +83,10 @@
 - (void) loadInitialData
 {
     ToDoItem *item1 = [[ToDoItem alloc] init];
-    item1.itemName = @"Buy milk";
+    item1.itemName = @"支付";
     [self.toDoItems addObject:item1];
     ToDoItem *item2 = [[ToDoItem alloc] init];
-    item2.itemName = @"Buy book";
+    item2.itemName = @"存款";
     [self.toDoItems addObject:item2];
 }
 
@@ -86,7 +94,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"select");
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
     ToDoItem *tappedItem = [self.toDoItems objectAtIndex:indexPath.row];
     tappedItem.completed = !tappedItem.completed;

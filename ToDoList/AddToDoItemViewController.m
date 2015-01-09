@@ -7,10 +7,18 @@
 //
 
 #import "AddToDoItemViewController.h"
+#import "Card.h"
+#import "TransactionInfo.h"
 
 @interface AddToDoItemViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *textFiled;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
+@property (weak, nonatomic) IBOutlet UILabel *yve;
+@property (weak, nonatomic) IBOutlet UILabel *account;
+@property (weak, nonatomic) IBOutlet UILabel *cart_no;
+@property (weak, nonatomic) IBOutlet UITableView *detail_info;
+- (IBAction)payment:(id)sender;
 
 @end
 
@@ -29,6 +37,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.overView = [[NSMutableArray alloc] init];
+    
+    [self loadInitialData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,6 +59,56 @@
     }
 }
 
+- (void) loadInitialData
+{
+    Card *card = [[Card alloc] init];
+    card.cardNo = @"123456789";
+    card.holder = @"takakiyo";
+    TransactionInfo *item1 = [[TransactionInfo alloc] init];
+    item1.incrementNo = @"000001";
+    item1.cardNo = card.cardNo;
+    item1.holder = card.holder;
+    item1.money = 30.05;
+    [self.overView addObject:item1];
+    TransactionInfo *item2 = [[TransactionInfo alloc] init];
+    item2.incrementNo = @"000002";
+    item2.cardNo = card.cardNo;
+    item2.holder = card.holder;
+    item2.money = 30.05;
+    [self.overView addObject:item2];
+    
+    
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.overView count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"InfoPrototypeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    TransactionInfo *trans = [self.overView objectAtIndex:indexPath.row];
+    cell.textLabel.text = trans.incrementNo;
+    return cell;
+}
+
+#pragma mark - Delegate
+- (IBAction)payment:(id)sender
+{
+    double money;
+    money = 38.9;
+    self.yve.text = [NSString stringWithFormat:@"%f", money];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -58,5 +119,4 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 @end

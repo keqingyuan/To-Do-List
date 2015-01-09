@@ -19,11 +19,12 @@
 		221734CF1A5D75AB00531817 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734CE1A5D75AB00531817 /* XCTest.framework */; };
 		221734D01A5D75AB00531817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734AC1A5D75AA00531817 /* Foundation.framework */; };
 		221734D11A5D75AB00531817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734B01A5D75AA00531817 /* UIKit.framework */; };
-		221734D91A5D75AB00531817 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 221734D71A5D75AB00531817 /* InfoPlist.strings */; };
-		221734DB1A5D75AB00531817 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 221734DA1A5D75AB00531817 /* ToDoListTests.m */; };
 		84F23AC11A5E57A4009938D4 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */; };
 		84F23AC41A5E58DA009938D4 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */; };
 		84F23AC71A5E5F40009938D4 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC61A5E5F40009938D4 /* ToDoItem.m */; };
+		84F23B0E1A5F9B87009938D4 /* TransInfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23B0D1A5F9B87009938D4 /* TransInfoTableViewController.m */; };
+		84F23B111A5F9DC2009938D4 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23B101A5F9DC2009938D4 /* Card.m */; };
+		84F23B141A5F9EF1009938D4 /* TransactionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23B131A5F9EF1009938D4 /* TransactionInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +53,18 @@
 		221734C71A5D75AB00531817 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		221734CD1A5D75AB00531817 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221734CE1A5D75AB00531817 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		221734D61A5D75AB00531817 /* ToDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListTests-Info.plist"; sourceTree = "<group>"; };
-		221734D81A5D75AB00531817 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		221734DA1A5D75AB00531817 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
 		84F23ABF1A5E57A4009938D4 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
 		84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
 		84F23AC21A5E58DA009938D4 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
 		84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		84F23AC51A5E5F40009938D4 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		84F23AC61A5E5F40009938D4 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		84F23B0C1A5F9B87009938D4 /* TransInfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransInfoTableViewController.h; sourceTree = "<group>"; };
+		84F23B0D1A5F9B87009938D4 /* TransInfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransInfoTableViewController.m; sourceTree = "<group>"; };
+		84F23B0F1A5F9DC2009938D4 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		84F23B101A5F9DC2009938D4 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		84F23B121A5F9EF1009938D4 /* TransactionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionInfo.h; sourceTree = "<group>"; };
+		84F23B131A5F9EF1009938D4 /* TransactionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				221734B21A5D75AA00531817 /* ToDoList */,
-				221734D41A5D75AB00531817 /* ToDoListTests */,
 				221734AB1A5D75AA00531817 /* Frameworks */,
 				221734AA1A5D75AA00531817 /* Products */,
 			);
@@ -124,8 +127,14 @@
 				221734BC1A5D75AB00531817 /* AppDelegate.m */,
 				221734BE1A5D75AB00531817 /* Main_iPhone.storyboard */,
 				221734C11A5D75AB00531817 /* Main_iPad.storyboard */,
+				84F23B0C1A5F9B87009938D4 /* TransInfoTableViewController.h */,
+				84F23B0D1A5F9B87009938D4 /* TransInfoTableViewController.m */,
 				84F23AC21A5E58DA009938D4 /* ToDoListTableViewController.h */,
 				84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */,
+				84F23B0F1A5F9DC2009938D4 /* Card.h */,
+				84F23B101A5F9DC2009938D4 /* Card.m */,
+				84F23B121A5F9EF1009938D4 /* TransactionInfo.h */,
+				84F23B131A5F9EF1009938D4 /* TransactionInfo.m */,
 				84F23AC51A5E5F40009938D4 /* ToDoItem.h */,
 				84F23AC61A5E5F40009938D4 /* ToDoItem.m */,
 				84F23ABF1A5E57A4009938D4 /* AddToDoItemViewController.h */,
@@ -143,24 +152,6 @@
 				221734B51A5D75AB00531817 /* InfoPlist.strings */,
 				221734B81A5D75AB00531817 /* main.m */,
 				221734BA1A5D75AB00531817 /* ToDoList-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		221734D41A5D75AB00531817 /* ToDoListTests */ = {
-			isa = PBXGroup;
-			children = (
-				221734DA1A5D75AB00531817 /* ToDoListTests.m */,
-				221734D51A5D75AB00531817 /* Supporting Files */,
-			);
-			path = ToDoListTests;
-			sourceTree = "<group>";
-		};
-		221734D51A5D75AB00531817 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				221734D61A5D75AB00531817 /* ToDoListTests-Info.plist */,
-				221734D71A5D75AB00531817 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,7 +243,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221734D91A5D75AB00531817 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +257,9 @@
 				84F23AC71A5E5F40009938D4 /* ToDoItem.m in Sources */,
 				221734B91A5D75AB00531817 /* main.m in Sources */,
 				84F23AC41A5E58DA009938D4 /* ToDoListTableViewController.m in Sources */,
+				84F23B0E1A5F9B87009938D4 /* TransInfoTableViewController.m in Sources */,
+				84F23B111A5F9DC2009938D4 /* Card.m in Sources */,
+				84F23B141A5F9EF1009938D4 /* TransactionInfo.m in Sources */,
 				84F23AC11A5E57A4009938D4 /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				221734DB1A5D75AB00531817 /* ToDoListTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,14 +304,6 @@
 				221734C21A5D75AB00531817 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		221734D71A5D75AB00531817 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				221734D81A5D75AB00531817 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
