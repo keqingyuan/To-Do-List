@@ -136,22 +136,10 @@
 		221734B21A5D75AA00531817 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				221734BB1A5D75AB00531817 /* AppDelegate.h */,
-				221734BC1A5D75AB00531817 /* AppDelegate.m */,
-				221734BE1A5D75AB00531817 /* Main_iPhone.storyboard */,
-				221734C11A5D75AB00531817 /* Main_iPad.storyboard */,
-				84F23B0C1A5F9B87009938D4 /* TransInfoTableViewController.h */,
-				84F23B0D1A5F9B87009938D4 /* TransInfoTableViewController.m */,
-				84F23AC21A5E58DA009938D4 /* ToDoListTableViewController.h */,
-				84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */,
-				84F23B0F1A5F9DC2009938D4 /* Card.h */,
-				84F23B101A5F9DC2009938D4 /* Card.m */,
-				84F23B121A5F9EF1009938D4 /* TransactionInfo.h */,
-				84F23B131A5F9EF1009938D4 /* TransactionInfo.m */,
-				84F23AC51A5E5F40009938D4 /* ToDoItem.h */,
-				84F23AC61A5E5F40009938D4 /* ToDoItem.m */,
-				84F23ABF1A5E57A4009938D4 /* AddToDoItemViewController.h */,
-				84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */,
+				84B58B331A651DF800611055 /* AppDelegate */,
+				84B58B341A651E0B00611055 /* view */,
+				84B58B351A651E1A00611055 /* controller */,
+				84B58B361A651E2500611055 /* model */,
 				221734C71A5D75AB00531817 /* Images.xcassets */,
 				221734B31A5D75AA00531817 /* Supporting Files */,
 			);
@@ -182,6 +170,50 @@
 				84B58A311A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		84B58B331A651DF800611055 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				221734BB1A5D75AB00531817 /* AppDelegate.h */,
+				221734BC1A5D75AB00531817 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84B58B341A651E0B00611055 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				221734BE1A5D75AB00531817 /* Main_iPhone.storyboard */,
+				221734C11A5D75AB00531817 /* Main_iPad.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		84B58B351A651E1A00611055 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84F23B0C1A5F9B87009938D4 /* TransInfoTableViewController.h */,
+				84F23B0D1A5F9B87009938D4 /* TransInfoTableViewController.m */,
+				84F23AC21A5E58DA009938D4 /* ToDoListTableViewController.h */,
+				84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */,
+				84F23ABF1A5E57A4009938D4 /* AddToDoItemViewController.h */,
+				84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		84B58B361A651E2500611055 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84F23B0F1A5F9DC2009938D4 /* Card.h */,
+				84F23B101A5F9DC2009938D4 /* Card.m */,
+				84F23B121A5F9EF1009938D4 /* TransactionInfo.h */,
+				84F23B131A5F9EF1009938D4 /* TransactionInfo.m */,
+				84F23AC51A5E5F40009938D4 /* ToDoItem.h */,
+				84F23AC61A5E5F40009938D4 /* ToDoItem.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
