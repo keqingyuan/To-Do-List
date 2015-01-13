@@ -12,6 +12,7 @@
 
 @property NSString *cardNo;
 @property NSString *holder;
+@property double money;
 @property (readonly) NSData *creationDate;
 
 @end

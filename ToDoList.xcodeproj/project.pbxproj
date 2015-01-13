@@ -19,6 +19,10 @@
 		221734CF1A5D75AB00531817 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734CE1A5D75AB00531817 /* XCTest.framework */; };
 		221734D01A5D75AB00531817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734AC1A5D75AA00531817 /* Foundation.framework */; };
 		221734D11A5D75AB00531817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221734B01A5D75AA00531817 /* UIKit.framework */; };
+		84B58A321A64FAC900611055 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B58A2B1A64FAC900611055 /* TPKeyboardAvoidingCollectionView.m */; };
+		84B58A331A64FAC900611055 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B58A2D1A64FAC900611055 /* TPKeyboardAvoidingScrollView.m */; };
+		84B58A341A64FAC900611055 /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B58A2F1A64FAC900611055 /* TPKeyboardAvoidingTableView.m */; };
+		84B58A351A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B58A311A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
 		84F23AC11A5E57A4009938D4 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */; };
 		84F23AC41A5E58DA009938D4 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC31A5E58DA009938D4 /* ToDoListTableViewController.m */; };
 		84F23AC71A5E5F40009938D4 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F23AC61A5E5F40009938D4 /* ToDoItem.m */; };
@@ -53,6 +57,14 @@
 		221734C71A5D75AB00531817 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		221734CD1A5D75AB00531817 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221734CE1A5D75AB00531817 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84B58A2A1A64FAC900611055 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		84B58A2B1A64FAC900611055 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		84B58A2C1A64FAC900611055 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		84B58A2D1A64FAC900611055 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		84B58A2E1A64FAC900611055 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		84B58A2F1A64FAC900611055 /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		84B58A301A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		84B58A311A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
 		84F23ABF1A5E57A4009938D4 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
 		84F23AC01A5E57A4009938D4 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
 		84F23AC21A5E58DA009938D4 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
@@ -94,6 +106,7 @@
 		221734A01A5D75AA00531817 = {
 			isa = PBXGroup;
 			children = (
+				84B58A291A64FA9B00611055 /* TPKeyboardAvoiding */,
 				221734B21A5D75AA00531817 /* ToDoList */,
 				221734AB1A5D75AA00531817 /* Frameworks */,
 				221734AA1A5D75AA00531817 /* Products */,
@@ -156,6 +169,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84B58A291A64FA9B00611055 /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				84B58A2A1A64FAC900611055 /* TPKeyboardAvoidingCollectionView.h */,
+				84B58A2B1A64FAC900611055 /* TPKeyboardAvoidingCollectionView.m */,
+				84B58A2C1A64FAC900611055 /* TPKeyboardAvoidingScrollView.h */,
+				84B58A2D1A64FAC900611055 /* TPKeyboardAvoidingScrollView.m */,
+				84B58A2E1A64FAC900611055 /* TPKeyboardAvoidingTableView.h */,
+				84B58A2F1A64FAC900611055 /* TPKeyboardAvoidingTableView.m */,
+				84B58A301A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				84B58A311A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+			);
+			name = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,6 +231,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = tak;
 				TargetAttributes = {
+					221734A81A5D75AA00531817 = {
+						DevelopmentTeam = PL9NCP8CG6;
+					};
 					221734CC1A5D75AB00531817 = {
 						TestTargetID = 221734A81A5D75AA00531817;
 					};
@@ -254,11 +285,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				221734BD1A5D75AB00531817 /* AppDelegate.m in Sources */,
+				84B58A351A64FAC900611055 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				84B58A331A64FAC900611055 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				84B58A321A64FAC900611055 /* TPKeyboardAvoidingCollectionView.m in Sources */,
 				84F23AC71A5E5F40009938D4 /* ToDoItem.m in Sources */,
 				221734B91A5D75AB00531817 /* main.m in Sources */,
 				84F23AC41A5E58DA009938D4 /* ToDoListTableViewController.m in Sources */,
 				84F23B0E1A5F9B87009938D4 /* TransInfoTableViewController.m in Sources */,
 				84F23B111A5F9DC2009938D4 /* Card.m in Sources */,
+				84B58A341A64FAC900611055 /* TPKeyboardAvoidingTableView.m in Sources */,
 				84F23B141A5F9EF1009938D4 /* TransactionInfo.m in Sources */,
 				84F23AC11A5E57A4009938D4 /* AddToDoItemViewController.m in Sources */,
 			);
@@ -364,6 +399,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -387,11 +423,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3df3a99a-e534-4504-bd45-cd07de9e8db5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -402,11 +441,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3df3a99a-e534-4504-bd45-cd07de9e8db5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

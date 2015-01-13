@@ -18,7 +18,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *account;
 @property (weak, nonatomic) IBOutlet UILabel *cart_no;
 @property (weak, nonatomic) IBOutlet UITableView *detail_info;
+
 - (IBAction)payment:(id)sender;
+
 
 @end
 
@@ -38,7 +40,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.overView = [[NSMutableArray alloc] init];
-    
     [self loadInitialData];
 }
 
@@ -64,6 +65,7 @@
     Card *card = [[Card alloc] init];
     card.cardNo = @"123456789";
     card.holder = @"takakiyo";
+    card.money = 400.5;
     TransactionInfo *item1 = [[TransactionInfo alloc] init];
     item1.incrementNo = @"000001";
     item1.cardNo = card.cardNo;
@@ -76,6 +78,10 @@
     item2.holder = card.holder;
     item2.money = 30.05;
     [self.overView addObject:item2];
+    
+    self.account.text = card.holder;
+    self.cart_no.text = card.cardNo;
+    self.yve.text = [NSString stringWithFormat:@"%f",card.money];
     
     
 }
@@ -101,11 +107,11 @@
     return cell;
 }
 
-#pragma mark - Delegate
+#pragma mark - Action
 - (IBAction)payment:(id)sender
 {
-    double money;
-    money = 38.9;
+    NSLog(@"....");
+    double money = 20;
     self.yve.text = [NSString stringWithFormat:@"%f", money];
 }
 

@@ -13,5 +13,7 @@
 @property NSMutableArray *toDoItems;
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+- (IBAction)connect:(id)sender;
+- (IBAction)disConnect:(id)sender;
 
 @end

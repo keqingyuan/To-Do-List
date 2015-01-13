@@ -80,6 +80,14 @@
     }
 }
 
+- (IBAction)connect:(id)sender {
+    NSLog(@"connect");
+}
+
+- (IBAction)disConnect:(id)sender {
+    NSLog(@"disConnect");
+}
+
 - (void) loadInitialData
 {
     ToDoItem *item1 = [[ToDoItem alloc] init];
