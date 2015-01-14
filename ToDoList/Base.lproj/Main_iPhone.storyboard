@@ -45,8 +45,16 @@
                         <barButtonItem title="断开" id="rVP-Ty-aG3"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="APP" id="0uY-zP-QUZ">
-                        <barButtonItem key="leftBarButtonItem" title="断开" id="GFu-kB-x6L"/>
-                        <barButtonItem key="rightBarButtonItem" title="连接" id="zuQ-he-u9M"/>
+                        <barButtonItem key="leftBarButtonItem" title="断开" id="GFu-kB-x6L">
+                            <connections>
+                                <action selector="disConnect:" destination="G6y-Og-CbF" id="maR-fO-Wir"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="连接" id="zuQ-he-u9M">
+                            <connections>
+                                <action selector="connect:" destination="G6y-Og-CbF" id="23O-eE-JaK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="khM-n0-R6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
