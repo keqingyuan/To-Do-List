@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "ToDoItem.h"
 
-@interface AddToDoItemViewController : UIViewController
+@interface AddToDoItemViewController : UIViewController<NSURLConnectionDelegate>
+{
+    NSMutableData *_responseData;
+}
 
 @property ToDoItem *toDoItem;
 @property NSMutableArray *overView;

@@ -111,8 +111,11 @@
 - (IBAction)payment:(id)sender
 {
     NSLog(@"....");
-    double money = 20;
-    self.yve.text = [NSString stringWithFormat:@"%f", money];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://192.168.36.41:3000"]];
+    NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *response = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"%@",response);
+    self.yve.text = [NSString stringWithFormat:@"%@", response];
 }
 
 /*
